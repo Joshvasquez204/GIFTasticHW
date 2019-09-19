@@ -1,0 +1,43 @@
+body {
+    background-image: url("../images/background2.jpg");
+    font-family: 'Arimo', 'sans-serif';
+    color: white;
+}
+
+.topic {
+    margin: 10px;
+}
+
+h2 {
+    letter-spacing: 5px;
+    text-align: center;
+    color:royalblue;
+}
+
+h6 {
+    font-style: italic;
+    color: rgb(240, 255, 244);
+}
+
+.topic {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.hero-name{
+    margin: 20px;
+    float: left;
+}
+
+p {
+    color:red;
+    margin-top: 20px;
+    line-height: 16px;
+}
+
+img {
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+
