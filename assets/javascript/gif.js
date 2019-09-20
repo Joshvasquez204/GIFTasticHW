@@ -1,8 +1,6 @@
 $(document).ready(function() {
     // Declaring Initial Array of Topics which is a list of Super Heroes
-    var topics = ['Superman', 'Aquaman', 'Spiderman', 'Batman', 'Thor', 'Hulk', 'Black Panther', 'Iron Man'];
-
-    /// ALL FUNCTIONS
+    var topics = ['Superman', 'Spiderman', 'Batman', 'Thor', 'Hulk', 'Black Panther', 'Iron Man'];
 
     //Function to display info on the topics by calling an API and retrieving the info 
     function displayInfo(){
@@ -32,7 +30,6 @@ $(document).ready(function() {
         for (var j = 0; j < results.length; j++){
           // Create new Div
           var newTopicDiv = $("<div class='hero-name'>");
-          // Save responses from API into variables and add to DOM
           // GIF Rating
           var pRating = $('<p>').text('Rating: ' + results[j].rating.toUpperCase());
           // GIF Title
@@ -45,7 +42,6 @@ $(document).ready(function() {
           gif.attr('data-animate', results[j].images.fixed_height.url);
           gif.attr('data-state', 'still');
           gif.addClass ('animate-gif');
-          // Appending info 
           newTopicDiv.append(pRating);
           newTopicDiv.append(pTitle);
           newTopicDiv.append(gif);
@@ -80,7 +76,8 @@ $(document).ready(function() {
       }
     }
 
-    // Function to play or still Gif images
+
+    //Funtion to play gif or still
     function playGif () {
       var state = $(this).attr('data-state');
       if (state === 'still') {
@@ -93,7 +90,7 @@ $(document).ready(function() {
       }
     }
 
-    ///EVENT LISTENERS aka CLICK EVENTS
+    ///EVENT LISTENERS
     // Click on the submit button to add a new hero button
     $("#add-hero").on("click", function(event) {
       event.preventDefault();

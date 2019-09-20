@@ -16,7 +16,7 @@ h2 {
 
 h6 {
     font-style: italic;
-    color: rgb(240, 255, 244);
+    color: royalblue;
 }
 
 .topic {
@@ -36,8 +36,8 @@ p {
 }
 
 img {
-    border-radius: 20px;
-    margin-top: 2px;
+    border-radius: 30px;
+    margin-top: 5px;
 }
 
 
